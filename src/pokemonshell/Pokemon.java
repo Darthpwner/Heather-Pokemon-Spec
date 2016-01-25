@@ -12,20 +12,6 @@ public class Pokemon implements iPokemon{
     private int expPts;
     private String type;
 
-    //Prints out all the Pokemon's stats
-    public void Stats() {
-        System.out.println("name: " + getName());
-        System.out.println("hp: " + getHP());
-        System.out.println("maxHP: " + getMaxHP());
-        System.out.println("atk: " + getAtk());
-        System.out.println("def: " + getDef());
-        System.out.println("evolution: " + getEvol());
-        System.out.println("expPts: " + getExpPts());
-        System.out.println("type: " + getType());
-
-        System.out.println("");
-    }
-
     //constructors
     public Pokemon(String name) {
         this.name = name;

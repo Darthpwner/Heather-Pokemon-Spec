@@ -2,12 +2,26 @@ package pokemonshell;
 
 public class PokemonShell {
 
+    //Prints out all the Pokemon's stats
+    public static void Stats(Pokemon p) {
+        System.out.println("name: " + p.getName());
+        System.out.println("hp: " + p.getHP());
+        System.out.println("maxHP: " + p.getMaxHP());
+        System.out.println("atk: " + p.getAtk());
+        System.out.println("def: " + p.getDef());
+        System.out.println("evolution: " + p.getEvol());
+        System.out.println("expPts: " + p.getExpPts());
+        System.out.println("type: " + p.getType());
+
+        System.out.println("");
+    }
+
     public static void main(String[] args) {
         Pokemon p1 = new Pokemon("Charmander"); //Default constructed Pokemon
         Pokemon p2 = new Pokemon("Pikachu", 5, 2, 2, "Electric");   //Client program Pokemon
 
-        p1.Stats();
-        p2.Stats();
+        Stats(p1);
+        Stats(p2);
 
         //Test p1 mutator methods
         System.out.println("p1 damage: " + p1.damage(1));
